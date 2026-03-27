@@ -1,0 +1,5 @@
+cv/
+**/id_rsa*
+**/id_rsa.backup
+**/id_rsa.pub.backup
+*.pdf
