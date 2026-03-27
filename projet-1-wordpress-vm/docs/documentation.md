@@ -46,6 +46,38 @@ Internet
 - MySQL 8.0
 - WordPress (dernière version)
 
+## Preuves visuelles
+
+### 1. Connexion SSH à la VM Ubuntu
+![Connexion SSH Ubuntu](../screenshots/01_ssh_connexion_ubuntu.jpg)
+> Connexion réussie à la VM Ubuntu 22.04 hébergée dans Azure via SSH.
+
+---
+
+### 2. Resource Group avec toutes les ressources
+![Resource Group Azure](../screenshots/02_resource_group_azure.jpg)
+> Le Resource Group `rg-wordpress-projet1` contient toutes les ressources du projet : VM, VNet, NSG, IP publique, disque.
+
+---
+
+### 3. VM Ubuntu en cours d'exécution
+![VM Ubuntu Running](../screenshots/03_vm_ubuntu_running.jpg)
+> La VM `vm-wordpress` de taille Standard_B1s tourne sous Ubuntu Server 22.04 dans Azure.
+
+---
+
+### 4. Page d'installation WordPress — Choix de langue
+![WordPress Choix de Langue](../screenshots/04_wordpress_choix_langue.jpg)
+> WordPress accessible via l'IP publique `http://20.121.196.182` — page de sélection de la langue d'installation.
+
+---
+
+### 5. WordPress — Configuration du site
+![WordPress Configuration](../screenshots/05_wordpress_configuration.jpg)
+> Deuxième étape de l'installation WordPress : configuration du nom du site, identifiants admin et email.
+
+---
+
 ## Compétences démontrées
 
 - Azure CLI
@@ -91,13 +123,8 @@ az vm deallocate --resource-group rg-wordpress-projet1 --name vm-wordpress
 az group delete --name rg-wordpress-projet1 --yes
 ```
 
-## Résultat
-
-WordPress déployé et accessible sur http://20.121.196.182
-
 ## Description pour CV
 
 > Déployé un serveur WordPress sur Azure VM (Ubuntu 22.04) en configurant une architecture réseau complète : Virtual Network, Subnet, NSG avec règles de sécurité, IP publique statique. Installation et configuration manuelle d'une stack LAMP (Apache, MySQL, PHP) via SSH. Utilisation d'Azure CLI pour l'automatisation du déploiement.
-```
 
 **Compétences :** Azure CLI · VM · VNet · NSG · Linux · Apache · MySQL · WordPress
