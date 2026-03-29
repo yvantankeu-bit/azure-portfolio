@@ -3,4 +3,5 @@ cv/
 **/id_rsa.backup
 **/id_rsa.pub.backup
 *.pdf
-projet-*/CLAUDE.md
+NOTES.md
+projet-*/NOTES.md
