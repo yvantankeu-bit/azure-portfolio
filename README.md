@@ -8,7 +8,7 @@ Projets pratiques pour certifié AZ-104 — du niveau 1 au niveau 3.
 |---------|--------|--------|--------|
 | projet-1-wordpress-vm | Héberger WordPress sur Azure VM | 1 | ✅ Terminé |
 | projet-2-blob-cdn | Azure Blob Storage + CDN statique | 1 | ✅ Terminé |
-| projet-3-hub-spoke | Architecture Hub-and-Spoke avec Azure Firewall | 2 | ⏳ À faire |
+| projet-3-hub-spoke | Architecture Hub-and-Spoke avec Azure Firewall | 2 | ✅ Terminé |
 | projet-4-identity-auth | Gestion des Identités & Authentification | 2 | ⏳ À faire |
 | projet-5-governance | Gouvernance Azure (Policy & Cost Management) | 2 | ⏳ À faire |
 | projet-6-load-balancer | Load Balancer + 2 VMs web | 2 | ⏳ À faire |
