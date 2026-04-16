@@ -14,7 +14,6 @@ Microsoft Entra ID (Tenant)
         ├── Utilisateurs synchronisés (on-premises → cloud)
         │
         ├── Utilisateurs invités B2B (Lima Tech Solutions)
-        │       └── Conditional Access (restrictions d'accès)
         │
         └── App Service (Web App .NET)
                 ├── Managed Identity (System Assigned)
@@ -38,79 +37,16 @@ Microsoft Entra ID (Tenant)
 | B2B Guest User | dev@limatech.com | utilisateur externe invité |
 | Google Identity Provider | OpenID Connect | configuré sur l'App Service |
 
-## Partie 1 — Synchronisation Hybride (Entra Connect)
+## Documentation détaillée
 
-### 1. VM Windows Server avec AD DS
-![VM Windows Server + AD DS](../screenshots/01_adds_users_onprem.jpg)
-> Utilisateurs et groupes créés dans Active Directory Domain Services sur Windows Server 2022.
+Les tutoriels complets avec captures d'écran sont disponibles ci-dessous :
 
----
-
-### 2. Installation et configuration d'Entra Connect
-![Entra Connect — Configuration rapide](../screenshots/02_entraconnect_setup.jpg)
-> Installation d'Azure AD Connect sur la VM on-premises, connexion au tenant Entra ID via un compte Global Administrator.
-
----
-
-### 3. Synchronisation réussie
-![Utilisateurs synchronisés dans Entra ID](../screenshots/03_users_synced_entraid.jpg)
-> Utilisateurs on-premises visibles dans Microsoft Entra ID après la synchronisation.
-
----
-
-## Partie 2 — Collaboration B2B
-
-### 4. Invitation d'un utilisateur externe
-![Invitation B2B](../screenshots/04_b2b_invite.jpg)
-> Invitation d'un développeur de Lima Tech Solutions en tant qu'utilisateur guest dans le tenant StratWise Consulting.
-
----
-
-### 5. Invitation acceptée
-![B2B Accepted](../screenshots/05_b2b_accepted.jpg)
-> Statut B2B Invitation : Accepted. L'utilisateur externe accède aux ressources partagées.
-
----
-
-## Partie 3 — Managed Identity + Key Vault
-
-### 6. Managed Identity activée sur l'App Service
-![Managed Identity](../screenshots/06_managed_identity.jpg)
-> System Assigned Identity activée sur l'App Service — un Principal de service est créé automatiquement dans Entra ID.
-
----
-
-### 7. Role Assignment — Key Vault Secrets User
-![RBAC Key Vault](../screenshots/07_keyvault_rbac.jpg)
-> Rôle Key Vault Secrets User assigné à la Managed Identity de l'App Service via IAM.
-
----
-
-### 8. Secrets dans Key Vault
-![Key Vault Secrets](../screenshots/08_keyvault_secrets.jpg)
-> Secrets stockés dans le Key Vault, accessibles par l'application sans credentials hardcodés.
-
----
-
-### 9. Application web affichant les secrets via Managed Identity
-![Web App Secrets Result](../screenshots/09_webapp_secrets_result.jpg)
-> L'application .NET récupère et affiche les secrets du Key Vault grâce à DefaultAzureCredential — aucun mot de passe dans le code.
-
----
-
-## Partie 4 — Google comme fournisseur d'identité
-
-### 10. Configuration Google OAuth dans Azure
-![Google Identity Provider](../screenshots/10_google_idp_configured.jpg)
-> Google configuré comme fournisseur d'identité sur l'App Service (ID client + secret OAuth depuis Google Cloud Console).
-
----
-
-### 11. Authentification via compte Google
-![Google Auth Test](../screenshots/11_google_auth_test.jpg)
-> Connexion réussie à l'application web via un compte Google — fédération OpenID Connect opérationnelle.
-
----
+| # | Tutoriel | Contenu |
+|---|----------|---------|
+| 1 | [Entra Connect — Synchronisation hybride](./01-entra-connect.md) | VM Windows Server 2022 + AD DS, installation Entra Connect, sync des utilisateurs |
+| 2 | [Managed Identity + Key Vault](./02-managed-identity.md) | App Service .NET, System Assigned Identity, RBAC Key Vault Secrets User, accès aux secrets |
+| 3 | [Collaboration B2B](./03-b2b.md) | Invitation utilisateur externe, acceptation, accès au tenant |
+| 4 | [Google Identity Provider](./04-google-idp.md) | Google Cloud Console, OAuth credentials, OpenID Connect sur App Service |
 
 ## Compétences démontrées
 
