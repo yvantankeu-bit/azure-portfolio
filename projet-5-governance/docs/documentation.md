@@ -74,6 +74,12 @@ Tenant Root Group
 
 ---
 
+### 7. Policy en action — Déploiement bloqué
+![Policy Violation](../screenshots/screenshot%2007%20—%20policy%20violation.png)
+> Tentative de créer un VNet en `eastus` sans les tags requis — Azure bloque automatiquement avec `RequestDisallowedByPolicy`. Les 3 policies actives apparaissent dans l'erreur : tags `environment`, `cost-center` obligatoires et région Canada uniquement. Preuve que les policies fonctionnent en mode **Deny**.
+
+---
+
 ## Compétences démontrées
 
 - Azure Management Groups — hiérarchie organisationnelle
