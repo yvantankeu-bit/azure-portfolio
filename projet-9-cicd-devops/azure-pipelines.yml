@@ -14,8 +14,10 @@ stages:
         steps:
           - checkout: self
           - script: |
-              python3 -m pip install -r projet-9-cicd-devops/app/requirements.txt
-              python3 -m pytest projet-9-cicd-devops/app/tests/ -v
+              python3 -m venv venv
+              source venv/bin/activate
+              pip install -r projet-9-cicd-devops/app/requirements.txt
+              pytest projet-9-cicd-devops/app/tests/ -v
             displayName: 'Install dependencies & Run tests'
 
   - stage: Deploy
