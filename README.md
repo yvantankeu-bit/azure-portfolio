@@ -11,10 +11,10 @@ Projets pratiques pour certifié AZ-104 — du niveau 1 au niveau 3.
 | projet-3-hub-spoke | Architecture Hub-and-Spoke avec Azure Firewall | 2 | ✅ Terminé |
 | projet-4-identity-auth | Gestion des Identités & Authentification | 2 | ✅ Terminé |
 | projet-5-governance | Gouvernance Azure (Policy & Cost Management) | 2 | ✅ Terminé |
-| projet-6-load-balancer | Load Balancer + 2 VMs web | 2 | ⏳ À faire |
+| projet-6-load-balancer | Load Balancer + 2 VMs web | 2 | ✅ Terminé |
 | projet-7-monitoring | Monitoring dashboard complet | 2 | ⏳ À faire |
-| projet-8-terraform | Infrastructure as Code avec Terraform | 3 | ⏳ À faire |
-| projet-9-cicd-devops | CI/CD pipeline sur Azure DevOps | 3 | ⏳ À faire |
+| projet-8-terraform | Infrastructure as Code avec Terraform | 3 | ✅ Terminé |
+| projet-9-cicd-devops | CI/CD pipeline sur Azure DevOps | 3 | ✅ Terminé |
 | projet-10-architecture-3tiers | Architecture 3-tiers (web/app/db) | 3 | ⏳ À faire |
 
 ## Compétences couvertes
