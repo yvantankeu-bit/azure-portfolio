@@ -13,13 +13,9 @@ stages:
       - job: BuildJob
         steps:
           - checkout: self
-          - task: UsePythonVersion@0
-            inputs:
-              versionSpec: '3.11'
-            displayName: 'Use Python 3.11'
           - script: |
-              pip install -r projet-9-cicd-devops/app/requirements.txt
-              pytest projet-9-cicd-devops/app/tests/ -v
+              python3 -m pip install -r projet-9-cicd-devops/app/requirements.txt
+              python3 -m pytest projet-9-cicd-devops/app/tests/ -v
             displayName: 'Install dependencies & Run tests'
 
   - stage: Deploy
