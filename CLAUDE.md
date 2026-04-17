@@ -14,10 +14,10 @@ CV/Portfolio Vercel : repo séparé `yvantankeu-bit/yvan-tankeu-portfolio` (doss
 | 3 — Hub-and-Spoke | projet-3-hub-spoke | ✅ Terminé | Azure Firewall, UDR, VNet Peering |
 | 4 — Identity & Auth | projet-4-identity-auth | ✅ Terminé | Entra Connect, B2B, Managed Identity, Key Vault, Google OpenID Connect |
 | 5 — Governance | projet-5-governance | ✅ Terminé | Management Groups FinDataCorp, 4 Azure Policies, tags |
-| 6 — Load Balancer | projet-6-load-balancer | 🔄 En cours | Load Balancer Standard + 2 VMs Apache |
+| 6 — Load Balancer | projet-6-load-balancer | ✅ Terminé | Load Balancer Standard + 2 VMs Apache |
 | 7 — Monitoring | projet-7-monitoring | ⏳ À faire | |
-| 8 — Terraform | projet-8-terraform | ⏳ À faire | |
-| 9 — CI/CD DevOps | projet-9-cicd-devops | ⏳ À faire | |
+| 8 — Terraform | projet-8-terraform | ✅ Terminé | IaC, Data Lake Gen2, VM Ubuntu |
+| 9 — CI/CD DevOps | projet-9-cicd-devops | ✅ Terminé | Azure DevOps, Flask, App Service |
 | 10 — Architecture 3-tiers | projet-10-architecture-3tiers | ⏳ À faire | |
 
 ## Subscription Azure
